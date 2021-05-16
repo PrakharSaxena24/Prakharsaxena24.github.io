@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prakhar`s Introduction</title>
+
+
+
+
+
+    <style>
+        #map {
+            height: 400px;
+
+            width: 100%;
+
+
+        }
+
+        .top {
+
+
+            height: auto;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            font-weight: bolder;
+            padding: 10px;
+
+
+
+        }
+
+        .container {
+
+            border: 5px solid black;
+            border-radius: 1%;
+
+            perspective: 1000px;
+            background-color: #485461;
+            background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+            align-items: center;
+            align-content: center;
+            text-align: center;
+
+        }
+
+        .btn {
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #e74c3c;
+            border-radius: 0.6em;
+            color: #e74c3c;
+            cursor: pointer;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-self: center;
+            -ms-flex-item-align: center;
+            align-self: center;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1;
+            margin: 20px;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            align-content: center;
+            margin: auto;
+
+        }
+
+        .btn:hover,
+        .btn:focus {
+            color: #fff;
+            outline: 0;
+        }
+
+        .first {
+            -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+            transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        }
+
+        .first:hover {
+            box-shadow: 0 0 40px 40px #e74c3c inset;
+        }
+
+        .details {
+            color: whitesmoke;
+            font-size: 30px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Country {
+            color: whitesmoke;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hist {
+            height: 20vh;
+            width: 80%;
+            background-color: white;
+            align-content: center;
+
+            margin: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            display: none;
+
+
+        }
+
+        .acc {
+            padding: 20px;
+            align-content: center;
+        }
+
+        #l1,
+        #l2,
+        #l3,
+        #l4,
+        #l5,
+        #l6 {
+            display: none;
+            flex-direction: column;
+            align-content: center;
+            margin: auto;
+        }
+
+        #l1,
+        #l2,
+        #l3,
+        #l4,
+        #l5,
+        #l6 img {
+
+            margin: auto;
+        }
+
+        #l2 img {
+            margin-left: 204px;
+        }
+
+        .hobbies {
+            color: whitesmoke;
+            font-size: 40px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="top">
+        </div>
+        <div class="details"> </div>
+        <br>
+        <div class="Country"></div>
+        <div class="hist" id="hist">
+            <div class="acc" id="l1">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@16df0db/baby.png" alt="" height="64px"
+                    width="64px">
+                <p>LUCKNOW <br>(INDIA)</p>
+            </div>
+            <div class="acc" id="l2">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@16df0db/airplane.png" alt="" height="64px"
+                    width="64px">
+                <p>======================================================></p>
+            </div>
+            <div class="acc" id="l3">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@16df0db/fuji-mountain.png" alt="" height="64px"
+                    width="64px">
+                <p>JAPAN<br>2017</p>
+                <p></p>
+            </div>
+            <div class="acc" id="l4">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@16df0db/osaka.png" alt="" height="64px"
+                    width="64px">
+                <p>OSAKA<br>2017 </p>
+
+            </div>
+            <div class="acc" id="l5">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@361aee1/baby-car.png" alt="" height="64px"
+                    width="64px">
+                <p>==========></p>
+
+            </div>
+
+            <div class="acc" id="l6">
+                <img src="https://cdn.jsdelivr.net/gh/PrakharSaxena24/AR@16df0db/torii-gate.png" alt="" height="64px"
+                    width="64px">
+                <p>KYOTO<br>
+                    2018-</p>
+            </div>
+        </div>
+        　
+
+
+
+
+
+        <div id="map"></div>
+        <br>
+        <br>
+        <button class="btn first" onclick="myfx()">Here!</button>
+
+        <div class="hobbies">
+            <p>Hobbies-</p>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASUVqRsXmSFedbKyBHdo9UxUf2UwuWHPQ&callback=initMap&libraries=&v=weekly"
+    async></script>
+
+
+<script>
+    let loca = { lat: 26.8467, lng: 80.9462 };
+    let flag = 0;
+    let zom = 0;
+    let pollines = [{ lat: 26.8467, lng: 80.9462 },
+    { lat: 28.7041, lng: 77.1025 }];
+    function initMap() {
+
+
+
+        let map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 6,
+            center: loca
+        });
+
+        let marker = new google.maps.Marker({
+            position: loca,
+            map: map,
+        });
+    }
+
+
+    function myfx() {
+
+        let a = document.getElementById("hist")
+        a.style.display = "flex";
+        if (flag == 0) {
+            let a = document.getElementById("l1")
+            a.style.display = "flex";
+
+        }
+        if (flag == 1) {
+            let a = document.getElementById("l2");
+            a.style.display = "flex";
+            document.getElementById("l3").style.display = "flex";
+
+
+        }
+        if (flag == 2) {
+            let a = document.getElementById("l4");
+            a.style.display = "flex";
+
+
+
+        }
+        if (flag == 3) {
+            let a = document.getElementById("l5");
+            a.style.display = "flex";
+            document.getElementById("l6").style.display = "flex";
+
+
+
+        }
+
+        loca_arr = { 0: { lat: 26.8467, lng: 80.9462 }, 1: { lat: 34.8269, lng: 135.4705 }, 2: { lat: 34.8269, lng: 135.4705 }, 3: { lat: 35.0116, lng: 135.7681 } };
+        console.log(2);
+        loca = loca_arr[flag];
+        zom_arr = { 0: 6, 1: 6, 2: 10, 3: 10 }
+        zoomap = zom_arr[zom];
+        let map = new google.maps.Map(document.getElementById("map"), {
+            zoom: zoomap,
+            center: loca,
+        });
+
+        let marker = new google.maps.Marker({
+            position: loca,
+            map: map,
+        });
+        pollines.push(loca_arr[flag]);
+        flag++;
+        zom++;
+        const flightPath = new google.maps.Polyline({
+            path: pollines,
+            geodesic: true,
+            strokeColor: "#FF0000",
+            strokeOpacity: 1.0,
+            strokeWeight: 2,
+        });
+
+        flightPath.setMap(map)
+        if (flag == 4) {
+            flag = 0;
+            zom = 0;
+
+            let map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6,
+                center: { lat: 26.8467, lng: 80.9462 }
+            });
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+</script>
+<script>
+    (function ($) {
+        $.fn.typeWrite = function (s) {
+            var o = { content: $(this).text(), delay: 80, t: this, i: 0 };
+            if (s) { $.extend(o, s); } o.t.text('');
+            var i = setInterval(function () {
+                o.t.text(o.t.text() + o.content.charAt(o.i++));
+                if (o.i == o.content.length) { clearInterval(i); }
+            }
+                , o.delay);
+            return o.t;
+        };
+    })(jQuery);
+
+    $('.top').typeWrite({ content: 'Introduction' });
+
+    setTimeout(function () {
+        $('.details').typeWrite({ content: 'Prakhar Saxena' });
+    }, 2000);
+
+
+
+</script>
